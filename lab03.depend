@@ -4,6 +4,18 @@
 	<vector>
 	"histogram.h"
 
-1587123691 c:\users\markus\desktop\lab03\histogram.h
+1587128585 c:\users\markus\desktop\lab03\histogram.h
+	<vector>
+
+1587128550 source:c:\users\markus\desktop\lab03\svg.cpp
+	<iostream>
+	<vector>
+	"svg.h"
+
+1587128730 c:\users\markus\desktop\lab03\svg.h
+	<vector>
+
+1587128620 source:c:\users\markus\desktop\lab03\histogram.cpp
+	"histogram.h"
 	<vector>
 
