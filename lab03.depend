@@ -19,3 +19,26 @@
 	"histogram.h"
 	<vector>
 
+1587649332 source:c:\users\marka\desktop\lab03\histogram.cpp
+	"histogram.h"
+	<vector>
+
+1587649332 c:\users\marka\desktop\lab03\histogram.h
+	<vector>
+
+1588179437 source:c:\users\marka\desktop\lab03\main.cpp
+	<iostream>
+	<vector>
+	"histogram.h"
+	"svg.h"
+
+1590688611 source:c:\users\marka\desktop\lab03\svg.cpp
+	<iostream>
+	<vector>
+	"svg.h"
+
+1590688409 c:\users\marka\desktop\lab03\svg.h
+	<string.h>
+	<vector>
+	<iostream>
+
