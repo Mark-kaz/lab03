@@ -55,7 +55,7 @@ double  shirina(  size_t number_count)
         }
         if ( IMAGE_WIDTH < three(number_count,BLOCK_WIDTH ))
         {
-            cerr << three << endl;
+            cerr << three(number_count,BLOCK_WIDTH ) << endl;
 
         }
 
@@ -67,7 +67,7 @@ void show_histogram_svg(const vector<size_t>& bins,  size_t number_count)
 {
 
 
-
+size_t IMAGINE_WIDTH=shirina (number_count);
     const auto BLOCK_WIDTH = 10;
     const auto IMAGE_HEIGHT = 300;
     const auto TEXT_LEFT = 20;
@@ -76,7 +76,8 @@ void show_histogram_svg(const vector<size_t>& bins,  size_t number_count)
     const auto BIN_HEIGHT = 30;
 
     double top = 0;
-    size_t IMAGINE_WIDTH=shirina (number_count);
+
+    svg_begin (IMAGINE_WIDTH, IMAGE_HEIGHT);
     for (size_t bin : bins)
     {
         const double bin_width = BLOCK_WIDTH * bin;
