@@ -61,7 +61,7 @@ double  shirina(  size_t number_count)
 
     }
     while (IMAGE_WIDTH < 70 || IMAGE_WIDTH > 800 || IMAGE_WIDTH < (number_count*BLOCK_WIDTH)/3.0);
-
+return IMAGE_WIDTH;
 }
 void show_histogram_svg(const vector<size_t>& bins,  size_t number_count)
 {
