@@ -16,7 +16,7 @@ void
 svg_end();
 
 void
-show_histogram_svg(const vector<size_t>& bins,size_t bin_count);
+show_histogram_svg(const vector<size_t>& bins);
 
 
 
