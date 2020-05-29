@@ -17,27 +17,35 @@ vector<double> input_numbers(istream& in, const size_t count)
 
     }
 }
-    Input read_input(istream& in)
+    Input read_input(istream& in, bool prompt)
     {
 
         Input data;
-
-        cerr << "Enter number count: ";
         size_t number_count;
-        cin >> number_count;
+         if (prompt)
+         {
+           cerr << "Enter number count: ";
+        in >> number_count;
 
         cerr << "Enter numbers: ";
         data.numbers = input_numbers(in, number_count);
 
         cerr << "Enter column count: ";
-        cin >> data.bin_count;
+        in >> data.bin_count;
+         }
+else
+    {
+        in >> number_count;
+        data.numbers = input_numbers(in, number_count);
+        in >> data.bin_count;
+    }
 
         return data;
     }
 
        int main()
     {
-     Input data = read_input(cin);
+     Input data = read_input(cin, true);
        const auto bins = make_histogram(data);
         show_histogram_svg(bins);
         return 0;

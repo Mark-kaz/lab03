@@ -27,9 +27,10 @@
 1590748920 c:\users\marka\desktop\lab03\histogram.h
 	<vector>
 
-1590747991 source:c:\users\marka\desktop\lab03\main.cpp
+1590750348 source:c:\users\marka\desktop\lab03\main.cpp
 	<iostream>
 	<vector>
+	<string>
 	"histogram.h"
 	"svg.h"
 
