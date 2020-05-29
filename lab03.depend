@@ -27,8 +27,9 @@
 1590748920 c:\users\marka\desktop\lab03\histogram.h
 	<vector>
 
-1590755475 source:c:\users\marka\desktop\lab03\main.cpp
+1590780926 source:c:\users\marka\desktop\lab03\main.cpp
 	<curl/curl.h>
+	<sstream>
 	<iostream>
 	<vector>
 	<string>
