@@ -1,5 +1,4 @@
 #include <curl/curl.h>
-
 #include <iostream>
 #include <vector>
 #include <string>
@@ -19,14 +18,14 @@ vector<double> input_numbers(istream& in, const size_t count)
 
     }
 }
-    Input read_input(istream& in, bool prompt)
-    {
+Input read_input(istream& in, bool prompt)
+{
 
-        Input data;
-        size_t number_count;
-         if (prompt)
-         {
-           cerr << "Enter number count: ";
+    Input data;
+    size_t number_count;
+    if (prompt)
+    {
+        cerr << "Enter number count: ";
         in >> number_count;
 
         cerr << "Enter numbers: ";
@@ -34,22 +33,34 @@ vector<double> input_numbers(istream& in, const size_t count)
 
         cerr << "Enter column count: ";
         in >> data.bin_count;
-         }
-else
+    }
+    else
     {
         in >> number_count;
         data.numbers = input_numbers(in, number_count);
         in >> data.bin_count;
     }
 
-        return data;
-    }
+    return data;
+}
 
-       int main()
+int main(int argc, char* argv[])
+{
+    if (argc > 1)
     {
-        curl_global_init(CURL_GLOBAL_ALL);
-     Input data = read_input(cin, true);
-       const auto bins = make_histogram(data);
-        show_histogram_svg(bins);
-        return 0;
+    CURL *curl = curl_easy_init();
+    if(curl)
+    {
+        CURLcode res;
+        curl_easy_setopt(curl, CURLOPT_URL, argv[1]);
+        res = curl_easy_perform(curl);
+        curl_easy_cleanup(curl);
     }
+    return 0;
+    }
+    curl_global_init(CURL_GLOBAL_ALL);
+    Input data = read_input(cin, true);
+    const auto bins = make_histogram(data);
+    show_histogram_svg(bins);
+    return 0;
+}
