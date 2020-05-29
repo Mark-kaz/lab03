@@ -27,7 +27,8 @@
 1590748920 c:\users\marka\desktop\lab03\histogram.h
 	<vector>
 
-1590750348 source:c:\users\marka\desktop\lab03\main.cpp
+1590755475 source:c:\users\marka\desktop\lab03\main.cpp
+	<curl/curl.h>
 	<iostream>
 	<vector>
 	<string>
@@ -41,4 +42,43 @@
 
 1590749411 c:\users\marka\desktop\lab03\svg.h
 	<vector>
+
+1587987748 c:\users\marka\desktop\lab03\curl-7.70.0-win32-mingw\include\curl\curl.h
+	"curlver.h"
+	"system.h"
+	<stdio.h>
+	<limits.h>
+	<osreldate.h>
+	<sys/types.h>
+	<time.h>
+	<winsock2.h>
+	<ws2tcpip.h>
+	<sys/select.h>
+	<sys/socket.h>
+	<sys/time.h>
+	<support/SupportDefs.h>
+	"easy.h"
+	"multi.h"
+	"urlapi.h"
+	"typecheck-gcc.h"
+
+1588125792 c:\users\marka\desktop\lab03\curl-7.70.0-win32-mingw\include\curl\curlver.h
+
+1587545274 c:\users\marka\desktop\lab03\curl-7.70.0-win32-mingw\include\curl\system.h
+	<winsock2.h>
+	<windows.h>
+	<ws2tcpip.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<sys/poll.h>
+
+1587545274 c:\users\marka\desktop\lab03\curl-7.70.0-win32-mingw\include\curl\easy.h
+
+1587545274 c:\users\marka\desktop\lab03\curl-7.70.0-win32-mingw\include\curl\multi.h
+	"curl.h"
+
+1587545274 c:\users\marka\desktop\lab03\curl-7.70.0-win32-mingw\include\curl\urlapi.h
+	"curl.h"
+
+1587545274 c:\users\marka\desktop\lab03\curl-7.70.0-win32-mingw\include\curl\typecheck-gcc.h
 

@@ -1,3 +1,5 @@
+#include <curl/curl.h>
+
 #include <iostream>
 #include <vector>
 #include <string>
@@ -45,6 +47,7 @@ else
 
        int main()
     {
+        curl_global_init(CURL_GLOBAL_ALL);
      Input data = read_input(cin, true);
        const auto bins = make_histogram(data);
         show_histogram_svg(bins);
