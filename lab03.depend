@@ -31,6 +31,14 @@
 	<vector>
 	"svg.h"
 
-1590749411 c:\users\marka\desktop\lab03\svg.h
+1591087446 c:\users\marka\desktop\lab03\svg.h
+	<string>
 	<vector>
+
+1591087446 source:c:\users\marka\desktop\lab03\main.cpp
+	<iostream>
+	<vector>
+	"histogram.h"
+	"svg.h"
+	<windows.h>
 

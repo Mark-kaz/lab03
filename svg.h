@@ -1,6 +1,6 @@
 #ifndef SVG_H_INCLUDED
 #define SVG_H_INCLUDED
-
+#include <string>
 #include <vector>
 using namespace std;
 void svg_rect(double x, double y, double width, double height,string stroke,string fill );
