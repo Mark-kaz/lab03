@@ -35,10 +35,12 @@
 	<string>
 	<vector>
 
-1591090821 source:c:\users\marka\desktop\lab03\main.cpp
+1591091125 source:c:\users\marka\desktop\lab03\main.cpp
 	<iostream>
 	<vector>
 	"histogram.h"
 	"svg.h"
 	<windows.h>
+	<string.h>
+	<sstream>
 
