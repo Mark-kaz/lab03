@@ -91,7 +91,8 @@ int main(int argc, char* argv[])
         input = read_input(cin, true);
     }
 
+size_t number_count;
 const auto bins = make_histogram(input);
-show_histogram_svg(bins);
+ show_histogram_svg(bins, number_count);
 return 0;
 }

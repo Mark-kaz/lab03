@@ -19,15 +19,15 @@
 	"histogram.h"
 	<vector>
 
-1590749181 source:c:\users\marka\desktop\lab03\histogram.cpp
+1591129674 source:c:\users\marka\desktop\lab03\histogram.cpp
 	<vector>
 	"histogram.h"
 	<iostream>
 
-1590748920 c:\users\marka\desktop\lab03\histogram.h
+1591129674 c:\users\marka\desktop\lab03\histogram.h
 	<vector>
 
-1590780926 source:c:\users\marka\desktop\lab03\main.cpp
+1591132034 source:c:\users\marka\desktop\lab03\main.cpp
 	<curl/curl.h>
 	<sstream>
 	<iostream>
@@ -36,15 +36,17 @@
 	"histogram.h"
 	"svg.h"
 
-1590749378 source:c:\users\marka\desktop\lab03\svg.cpp
+1591131928 source:c:\users\marka\desktop\lab03\svg.cpp
 	<iostream>
 	<vector>
 	"svg.h"
 
-1590749411 c:\users\marka\desktop\lab03\svg.h
+1591132404 c:\users\marka\desktop\lab03\svg.h
+	<string.h>
 	<vector>
+	<iostream>
 
-1587987748 c:\users\marka\desktop\lab03\curl-7.70.0-win32-mingw\include\curl\curl.h
+1591129674 c:\users\marka\desktop\lab03\curl-7.70.0-win32-mingw\include\curl\curl.h
 	"curlver.h"
 	"system.h"
 	<stdio.h>
@@ -63,9 +65,9 @@
 	"urlapi.h"
 	"typecheck-gcc.h"
 
-1588125792 c:\users\marka\desktop\lab03\curl-7.70.0-win32-mingw\include\curl\curlver.h
+1591129674 c:\users\marka\desktop\lab03\curl-7.70.0-win32-mingw\include\curl\curlver.h
 
-1587545274 c:\users\marka\desktop\lab03\curl-7.70.0-win32-mingw\include\curl\system.h
+1591129674 c:\users\marka\desktop\lab03\curl-7.70.0-win32-mingw\include\curl\system.h
 	<winsock2.h>
 	<windows.h>
 	<ws2tcpip.h>
@@ -73,13 +75,13 @@
 	<sys/socket.h>
 	<sys/poll.h>
 
-1587545274 c:\users\marka\desktop\lab03\curl-7.70.0-win32-mingw\include\curl\easy.h
+1591129674 c:\users\marka\desktop\lab03\curl-7.70.0-win32-mingw\include\curl\easy.h
 
-1587545274 c:\users\marka\desktop\lab03\curl-7.70.0-win32-mingw\include\curl\multi.h
+1591129674 c:\users\marka\desktop\lab03\curl-7.70.0-win32-mingw\include\curl\multi.h
 	"curl.h"
 
-1587545274 c:\users\marka\desktop\lab03\curl-7.70.0-win32-mingw\include\curl\urlapi.h
+1591129674 c:\users\marka\desktop\lab03\curl-7.70.0-win32-mingw\include\curl\urlapi.h
 	"curl.h"
 
-1587545274 c:\users\marka\desktop\lab03\curl-7.70.0-win32-mingw\include\curl\typecheck-gcc.h
+1591129674 c:\users\marka\desktop\lab03\curl-7.70.0-win32-mingw\include\curl\typecheck-gcc.h
 

@@ -27,18 +27,46 @@ svg_end() {
 cout << "</svg>\n";
 }
 
-void
-show_histogram_svg(const vector<size_t>& bins)
+double  shirina(  size_t number_count)
 {
-    const auto IMAGE_WIDTH = 400;
+    const auto BLOCK_WIDTH = 10;
+    size_t IMAGE_WIDTH;
+    do
+    {
+        cerr << "Enter IMAGE_WIDTH: ";
+        cin >> IMAGE_WIDTH;
+
+        if ( IMAGE_WIDTH < 70 )
+        {
+            cerr  << "< 70" << endl;
+
+        }
+
+        if (IMAGE_WIDTH > 800 )
+        {
+            cerr  << "> 800 " << endl;
+
+        }
+
+
+    }
+    while (IMAGE_WIDTH < 70 || IMAGE_WIDTH > 800 );
+return IMAGE_WIDTH;
+}
+
+void show_histogram_svg(const vector<size_t>& bins,  size_t number_count)
+{
+   size_t IMAGINE_WIDTH=shirina (number_count);
+    const auto BLOCK_WIDTH = 10;
     const auto IMAGE_HEIGHT = 300;
     const auto TEXT_LEFT = 20;
     const auto TEXT_BASELINE = 20;
     const auto TEXT_WIDTH = 50;
     const auto BIN_HEIGHT = 30;
-    const auto BLOCK_WIDTH = 10;
+
     double top = 0;
-    svg_begin(IMAGE_WIDTH, IMAGE_HEIGHT);
+
+    svg_begin (IMAGINE_WIDTH, IMAGE_HEIGHT);
     for (size_t bin : bins)
     {
         const double bin_width = BLOCK_WIDTH * bin;
