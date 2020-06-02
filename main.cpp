@@ -1,10 +1,12 @@
 #include <iostream>
 #include <vector>
 #include "histogram.h"
+#include "svg.h"
+using namespace std;
 
 
-vector<double>
-input_numbers(size_t count)
+
+vector<double> input_numbers(size_t count)
 {
     vector<double> result(count);
     for (size_t i = 0; i < count; i++)
@@ -14,9 +16,7 @@ input_numbers(size_t count)
     return result;
 }
 
-
-
-vector <size_t> make_histogram(const vector<double> &numbers,size_t bin_count)
+vector <size_t> make_histogram(const vector<double>& numbers,size_t bin_count)
 {
     double min;
     double max;
@@ -35,10 +35,13 @@ vector <size_t> make_histogram(const vector<double> &numbers,size_t bin_count)
     return bins;
 }
 
-
 int main()
 {
-    size_t number_count;
+    const char* name = "Commander Shepard";
+    int year = 2154;
+    printf("%s was born in %d.\n", name, year);
+    printf("n = %08x\n", 0x1234568);
+        size_t number_count;
     cerr << "Enter number count: ";
     cin >> number_count;
     cerr << "Enter numbers: ";
