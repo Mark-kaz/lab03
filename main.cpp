@@ -2,6 +2,7 @@
 #include <vector>
 #include "histogram.h"
 #include "svg.h"
+#include <windows.h>
 using namespace std;
 
 
@@ -37,11 +38,7 @@ vector <size_t> make_histogram(const vector<double>& numbers,size_t bin_count)
 
 int main()
 {
-    const char* name = "Commander Shepard";
-    int year = 2154;
-    printf("%s was born in %d.\n", name, year);
-    printf("n = %08x\n", 0x1234568);
-        size_t number_count;
+    size_t number_count;
     cerr << "Enter number count: ";
     cin >> number_count;
     cerr << "Enter numbers: ";
