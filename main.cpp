@@ -56,6 +56,10 @@ int main()
     }
     else
         printf("Windows v%lu.%lu (build %lu)\n",version_major,version_minor,build);
+    char system_name[MAX_COMPUTERNAME_LENGTH + 1];
+    DWORD Size = sizeof(system_name);
+    GetComputerNameA(system_name, &Size);
+    printf("System name: %s", system_name);
     return 0;
     size_t number_count;
     cerr << "Enter number count: ";
