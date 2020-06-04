@@ -19,28 +19,91 @@
 	"histogram.h"
 	<vector>
 
-1591291188 source:c:\users\marka\desktop\lab03\histogram.cpp
+1587128620 D
+
+1591293281 source:c:\users\marka\desktop\lab03\histogram.cpp
+	<vector>
 	"histogram.h"
+	<iostream>
+
+1591293281 c:\users\marka\desktop\lab03\histogram.h
 	<vector>
 
-1591291188 c:\users\marka\desktop\lab03\histogram.h
-	<vector>
-
-1591291188 source:c:\users\marka\desktop\lab03\svg.cpp
+1591300109 source:c:\users\marka\desktop\lab03\svg.cpp
 	<iostream>
 	<vector>
 	"svg.h"
+	"system_info.h"
 
-1591291188 c:\users\marka\desktop\lab03\svg.h
+1591298879 c:\users\marka\desktop\lab03\svg.h
 	<string>
 	<vector>
+	<iostream>
 
-1591291188 source:c:\users\marka\desktop\lab03\main.cpp
+1591302085 source:c:\users\marka\desktop\lab03\main.cpp
+	<curl/curl.h>
+	<sstream>
 	<iostream>
 	<vector>
+	<string>
 	"histogram.h"
 	"svg.h"
 	<windows.h>
 	<string.h>
 	<sstream>
+
+1591291188 
+
+1591293281 c:\users\marka\desktop\lab03\curl-7.70.0-win32-mingw\include\curl\curl.h
+	"curlver.h"
+	"system.h"
+	<stdio.h>
+	<limits.h>
+	<osreldate.h>
+	<sys/types.h>
+	<time.h>
+	<winsock2.h>
+	<ws2tcpip.h>
+	<sys/select.h>
+	<sys/socket.h>
+	<sys/time.h>
+	<support/SupportDefs.h>
+	"easy.h"
+	"multi.h"
+	"urlapi.h"
+	"typecheck-gcc.h"
+
+1591293281 c:\users\marka\desktop\lab03\curl-7.70.0-win32-mingw\include\curl\curlver.h
+
+1591293281 c:\users\marka\desktop\lab03\curl-7.70.0-win32-mingw\include\curl\system.h
+	<winsock2.h>
+	<windows.h>
+	<ws2tcpip.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<sys/poll.h>
+
+1591293281 c:\users\marka\desktop\lab03\curl-7.70.0-win32-mingw\include\curl\easy.h
+
+1591293281 c:\users\marka\desktop\lab03\curl-7.70.0-win32-mingw\include\curl\multi.h
+	"curl.h"
+
+1591293281 c:\users\marka\desktop\lab03\curl-7.70.0-win32-mingw\include\curl\urlapi.h
+	"curl.h"
+
+1591293281 c:\users\marka\desktop\lab03\curl-7.70.0-win32-mingw\include\curl\typecheck-gcc.h
+
+1591288338 04-1
+
+1591300109 c:\users\marka\desktop\lab03\system_info.h
+	<sstream>
+	<iostream>
+	<string>
+
+1591300109 source:c:\users\marka\desktop\lab03\system_info.cpp
+	<windows.h>
+	<sstream>
+	<iostream>
+	<string>
+	"system_info.h"
 
