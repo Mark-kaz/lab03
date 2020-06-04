@@ -59,24 +59,33 @@ Input
 download(const string& address)
 {
     stringstream buffer;
-
     curl_global_init(CURL_GLOBAL_ALL);
-
     CURL *curl = curl_easy_init();
     if(curl)
     {
+        double total;
         CURLcode res;
         curl_easy_setopt(curl, CURLOPT_URL, address.c_str());
         curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_data);
         curl_easy_setopt(curl, CURLOPT_WRITEDATA, &buffer);
         res = curl_easy_perform(curl);
-        if (res != CURLE_OK)
+        if (res!=CURLE_OK)
         {
-            cout << curl_easy_strerror(res) << endl;
+            cout<<curl_easy_strerror(res);
             exit(1);
         }
+        if(CURLE_OK == res)
+        {
+            res = curl_easy_getinfo(curl, CURLINFO_TOTAL_TIME, &total);
+            if(CURLE_OK == res)
+            {
+                printf("Time: %.1f", total);
+            }
+        }
         curl_easy_cleanup(curl);
-    }
+    };
+
+    return read_input(buffer, false);
 }
 
 int main(int argc, char* argv[])
@@ -91,8 +100,8 @@ int main(int argc, char* argv[])
         input = read_input(cin, true);
     }
 
-size_t number_count;
-const auto bins = make_histogram(input);
- show_histogram_svg(bins, number_count);
-return 0;
+    size_t number_count;
+    const auto bins = make_histogram(input);
+    show_histogram_svg(bins, number_count);
+    return 0;
 }
